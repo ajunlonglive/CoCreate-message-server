@@ -20,6 +20,10 @@
     "html5-framework",
     "javascript-framework"
   ],
+  "scripts": {
+    "demo": "PORT=5000 node demo/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -31,10 +35,7 @@
     "url": "https://github.com/CoCreate-app/CoCreate-message-server/issues"
   },
   "homepage": "https://cocreate.app/docs/CoCreate-message-server",
-  "scripts": {
-    "demo": "PORT=5000 node demo/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
   "dependencies": {
     "@cocreate/docs": "^1.0.3",
     "mongodb": "^3.5.8"
