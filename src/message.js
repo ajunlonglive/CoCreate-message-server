@@ -1,18 +1,16 @@
 
-const CoCreateBase = require("./base");
 const {ObjectID, Binary} = require("mongodb");
 
-class CoCreateMessage extends CoCreateBase {
+class CoCreateMessage {
 	constructor(wsManager, db) {
-		super(wsManager, db);
+		// super(wsManager, db);
+		this.wsManager = wsManager;
 		this.init();
 	}
 	
 	init() {
 		if (this.wsManager) {
 			this.wsManager.on('sendMessage',		(socket, data) => this.sendMessage(socket, data));
-		    this.wsManager.on('openWindow',			(socket, data) => this.openWindow(socket, data))
-			this.wsManager.on('windowBtnEvent', 	(socket, data) => this.windowBtnEvent(socket, data))
 		}
 	}
 
@@ -27,11 +25,6 @@ class CoCreateMessage extends CoCreateBase {
 	})
 	**/
 	async sendMessage(socket, data, roomInfo) {
-		if (!await this.checkSecurity(data)) {
-			this.wsManager.send(socket, 'securityError', 'error', data['organization_id']);
-			return;   
-		}
-
 		try {
 			const req_data = data;
 			if (!req_data.emit) {
@@ -59,47 +52,6 @@ class CoCreateMessage extends CoCreateBase {
 			console.log('sendMessage Error', error);
 		}
 	}
-	
-	async windowBtnEvent(socket, data) {
-		if (!await this.checkSecurity(data)) {
-			this.wsManager.send(socket, 'securityError', 'error', data['organization_id']);
-    		return; 
-		}
-		
-		try {
-			this.wsManager.send(socket, 'windowBtnEvent', data.data, data['organization_id']);
-			//. broadcast
-			if (data.room) {
-				this.wsManager.broadcast(socket, data['organization_id'] , data.room, 'windowBtnEvent', data.data, true);
-			} else {
-				this.wsManager.broadcast(socket, data['organization_id'], null, 'windowBtnEvent', data.data)
-			}
-			
-		} catch (error) {
-			console.log('window btn event', error);
-		}
-	}
-	
-	async openWindow(socket, data) {
-		if (!await this.checkSecurity(data)) {
-			this.wsManager.send(socket, 'securityError', 'error', data['organization_id']);
-    		return; 
-		}
-		
-		try {
-			this.wsManager.send(socket, 'openWindow', data.data, data['organization_id']);
-			//. broadcast
-			if (data.room) {
-				this.wsManager.broadcast(socket, data['organization_id'] , data.room, 'openWindow', data.data, true);
-			} else {
-				this.wsManager.broadcast(socket, data['organization_id'], null, 'openWindow', data.data)
-			}
-			
-		} catch (error) {
-			console.log('window btn event', error);
-		}
-	}
-
 }
 module.exports = CoCreateMessage;
 
