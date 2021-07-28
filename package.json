@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/message-server",
-  "version": "0.5.5",
+  "version": "1.1.4",
   "description": "CoCreate-message-server",
   "keywords": [
     "cocreate-message",
@@ -38,7 +38,6 @@
     "url": "https://github.com/CoCreate-app/CoCreate-message-server/issues"
   },
   "homepage": "https://cocreate.app/docs/CoCreate-message-server",
-
   "dependencies": {
     "@cocreate/docs": "^1.0.3",
     "mongodb": "^3.5.8"
