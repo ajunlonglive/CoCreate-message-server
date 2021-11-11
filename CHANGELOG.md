@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.5...v1.1.6) (2021-11-11)
+
+
+### Bug Fixes
+
+* update .gitignore ([36fe84c](https://github.com/CoCreate-app/CoCreate-message-server/commit/36fe84cac8173b431b5ede5112c1bd717c22dd69))
+
 ## [1.1.5](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.4...v1.1.5) (2021-11-01)
 
 
