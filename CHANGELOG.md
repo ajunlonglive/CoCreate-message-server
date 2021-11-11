@@ -1,3 +1,11 @@
+## [1.1.7](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.6...v1.1.7) (2021-11-11)
+
+
+### Bug Fixes
+
+* licensing information ([f10f418](https://github.com/CoCreate-app/CoCreate-message-server/commit/f10f418011b411247148a35665e3a11de836c1cd))
+* update readme ([34b50a2](https://github.com/CoCreate-app/CoCreate-message-server/commit/34b50a2e7d5efe32d81a2d1eff85c418af31d878))
+
 ## [1.1.6](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.5...v1.1.6) (2021-11-11)
 
 
