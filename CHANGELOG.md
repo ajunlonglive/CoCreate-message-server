@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.7...v1.1.8) (2022-02-09)
+
+
+### Bug Fixes
+
+* update CoCreate.config.js, bump @cocreate/docs version ([335592f](https://github.com/CoCreate-app/CoCreate-message-server/commit/335592f7a5abac02b53f30071441785a4a8ab532))
+
 ## [1.1.7](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.6...v1.1.7) (2021-11-11)
 
 
