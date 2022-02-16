@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.9...v1.1.10) (2022-02-16)
+
+
+### Bug Fixes
+
+* update dependencies ([e6e6f0a](https://github.com/CoCreate-app/CoCreate-message-server/commit/e6e6f0a8ebc30c784d0763012dbec41f8a81a91b))
+
 ## [1.1.9](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.8...v1.1.9) (2022-02-09)
 
 
