@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.10...v1.1.11) (2022-02-28)
+
+
+### Bug Fixes
+
+* config docs wildcard * domain ([f7d975a](https://github.com/CoCreate-app/CoCreate-message-server/commit/f7d975a0b790517ba6cf9d7fba09ea5cfb43ba9f))
+
 ## [1.1.10](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.9...v1.1.10) (2022-02-16)
 
 
