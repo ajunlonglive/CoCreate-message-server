@@ -1,16 +1,12 @@
-
-const {ObjectID, Binary} = require("mongodb");
-
 class CoCreateMessage {
-	constructor(wsManager, db) {
-		// super(wsManager, db);
+	constructor(wsManager) {
 		this.wsManager = wsManager;
 		this.init();
 	}
 	
 	init() {
 		if (this.wsManager) {
-			this.wsManager.on('sendMessage',		(socket, data) => this.sendMessage(socket, data));
+			this.wsManager.on('sendMessage', (socket, data) => this.sendMessage(socket, data));
 		}
 	}
 
