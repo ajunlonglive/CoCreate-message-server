@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.11...v1.1.12) (2022-03-03)
+
+
+### Bug Fixes
+
+* main: ./src/index.js ([5a3aea7](https://github.com/CoCreate-app/CoCreate-message-server/commit/5a3aea7081774888d86cbe67c7a0b3719ec64073))
+
 ## [1.1.11](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.10...v1.1.11) (2022-02-28)
 
 
