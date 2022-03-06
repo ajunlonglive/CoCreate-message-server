@@ -29,13 +29,7 @@ class CoCreateMessage {
 			
 			const self = this;
 			const emit = req_data.emit;
-			
-			if (data.broadcast_sender !== false) {
-				self.wsManager.send(socket, emit.message, emit.data, data['organization_id']);
-			}
-			if (data.broadcast !== false) {
-				self.wsManager.broadcast(socket, req_data.namespace || data['organization_id'], req_data.rooms, emit.message, emit.data);
-			}
+			self.wsManager.broadcast(socket, req_data.namespace || data['organization_id'], req_data.rooms, emit.message, emit.data);
 			
 		} catch (error) {
 			console.log('sendMessage Error', error);
