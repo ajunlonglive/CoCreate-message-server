@@ -20,7 +20,7 @@ class CoCreateMessage {
 		}
 	})
 	**/
-	async sendMessage(socket, data, roomInfo) {
+	async sendMessage(socket, data, socketInfo) {
 		try {
 			const req_data = data;
 			if (!req_data.emit) {
