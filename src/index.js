@@ -30,18 +30,11 @@ class CoCreateMessage {
 			const self = this;
 			const emit = req_data.emit;
 			
-			if (data.broadcast_sender === true) {
+			if (data.broadcast_sender !== false) {
 				self.wsManager.send(socket, emit.message, emit.data, data['organization_id']);
 			}
-
 			if (data.broadcast !== false) {
-				if (req_data.rooms && req_data.rooms.length > 0) {
-					req_data.rooms.forEach((room) => {
-						self.wsManager.broadcast(socket, req_data.namespace || data['organization_id'] , room, emit.message, emit.data, true);
-					})
-				} else {
-					self.wsManager.broadcast(socket, req_data.namespace || data['organization_id'] , null, emit.message, emit.data);
-				}
+				self.wsManager.broadcast(socket, req_data.namespace || data['organization_id'], req_data.rooms, emit.message, emit.data);
 			}
 			
 		} catch (error) {
