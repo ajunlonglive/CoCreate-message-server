@@ -1,3 +1,12 @@
+## [1.1.13](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.12...v1.1.13) (2022-03-06)
+
+
+### Bug Fixes
+
+* broadcast_sender if condition removed and handeled by socket ([3f02abf](https://github.com/CoCreate-app/CoCreate-message-server/commit/3f02abf140b3aba761c2a9eba63b0dfd100545da))
+* removed param isExact from broadcast as it can be handled by param room ([986da11](https://github.com/CoCreate-app/CoCreate-message-server/commit/986da113a596eb0a94478b0295d425612f2ade06))
+* update param roomInfo to socketInfo ([0f5b0e7](https://github.com/CoCreate-app/CoCreate-message-server/commit/0f5b0e7a033d786d12a3f2e019edd9294b08218b))
+
 ## [1.1.12](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.11...v1.1.12) (2022-03-03)
 
 
