@@ -6,7 +6,7 @@ class CoCreateMessage {
 	
 	init() {
 		if (this.wsManager) {
-			this.wsManager.on('sendMessage', (socket, data) => this.sendMessage(socket, data));
+			this.wsManager.on('sendMessage', (socket, data, socketInfo) => this.sendMessage(socket, data, socketInfo));
 		}
 	}
 
@@ -22,15 +22,8 @@ class CoCreateMessage {
 	**/
 	async sendMessage(socket, data, socketInfo) {
 		try {
-			const req_data = data;
-			if (!req_data.emit) {
-				return ;
-			}
-			
-			const self = this;
-			const emit = req_data.emit;
-			self.wsManager.broadcast(socket, req_data.namespace || data['organization_id'], req_data.rooms, emit.message, emit.data);
-			
+			if (!data.emit) return;
+			this.wsManager.broadcast(socket, data.namespace || data['organization_id'], data.rooms, data.emit.message, data, socketInfo);
 		} catch (error) {
 			console.log('sendMessage Error', error);
 		}
