@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.13...v1.1.14) (2022-03-22)
+
+
+### Bug Fixes
+
+* removed emit from message.send and message.listen ([64660c3](https://github.com/CoCreate-app/CoCreate-message-server/commit/64660c342f15e9465b9ec1fc82ee6bb9162087a0))
+
 ## [1.1.13](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.12...v1.1.13) (2022-03-06)
 
 
