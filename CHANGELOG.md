@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.15...v1.2.0) (2022-05-14)
+
+
+### Features
+
+* function readDocumentList has been renamed to readDocuments ([c3b9ef4](https://github.com/CoCreate-app/CoCreate-message-server/commit/c3b9ef46f2f9088e64b76eab23ffe5a8ca44296b))
+
 ## [1.1.15](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.14...v1.1.15) (2022-05-06)
 
 
