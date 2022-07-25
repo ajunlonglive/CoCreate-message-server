@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.2.0...v1.2.1) (2022-07-25)
+
+
+### Bug Fixes
+
+* replaced attribute pass-fetch_value with pass-filter-value ([f07f968](https://github.com/CoCreate-app/CoCreate-message-server/commit/f07f9686deddaf6bb64a10dd40f1ae73d58b5167))
+
 # [1.2.0](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.1.15...v1.2.0) (2022-05-14)
 
 
