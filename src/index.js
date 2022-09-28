@@ -21,7 +21,7 @@ class CoCreateMessage {
 	async sendMessage(socket, data) {
 		try {
 			if (!data.data) return;
-			this.wsManager.broadcast(socket, data.namespace || data['organization_id'], data.rooms, data.message, data);
+			this.wsManager.broadcast(socket, data.message, data);
 		} catch (error) {
 			console.log('sendMessage Error', error);
 		}
