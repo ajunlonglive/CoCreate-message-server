@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.2.2...v1.3.0) (2022-10-01)
+
+
+### Bug Fixes
+
+* broacast params reduced to socket, message, data ([a26ab1b](https://github.com/CoCreate-app/CoCreate-message-server/commit/a26ab1b5e049e224fc06e95d001f2d8a0cd153fe))
+* bump dependencies ([5283899](https://github.com/CoCreate-app/CoCreate-message-server/commit/5283899833386983892e38313aebea6ad82687c2))
+
+
+### Features
+
+* config is accessible from socket.config ([165e7c2](https://github.com/CoCreate-app/CoCreate-message-server/commit/165e7c2eaba811cd974f0ed0c4307d71fc15abb4))
+
 ## [1.2.2](https://github.com/CoCreate-app/CoCreate-message-server/compare/v1.2.1...v1.2.2) (2022-09-01)
 
 
